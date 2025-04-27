@@ -16,15 +16,12 @@ const calculateHash = async () => {
   } catch (error) {
     throw new Error(`Error reading directory: ${error.message}`);
   }
-
-  console.log('chunk');
   //initiate read stream and hash calculation
   const readStream = createReadStream(filePath);
   const hash = crypto.createHash("sha256");
 
- // Listen for data events to update the hash
+  // Listen for data events to update the hash
   readStream.on("data", (chunk) => {
-    
     hash.update(chunk);
   });
 
