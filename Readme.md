@@ -1,8 +1,6 @@
 # Node.js basics
 
 ## /src updated with the solutions 
-## Total Score: 136 + 70 = 206
-## Basic Scope -> Total Score: 136
 
 - File system (src/fs)
     - **+6** `create.js` implemented properly 
